@@ -16,14 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: devcard_horizontal
-        uses: dailydotdev/action-devcard@3.2.0
+        uses: dailydotdev/action-devcard@3.2.1
         with:
           user_id: ${{ secrets.USER_ID }}
           commit_message: "Update ${filename}"
           type: "wide"
           commit_filename: "devcard_horizontal.png"
       - name: devcard_vertical
-        uses: dailydotdev/action-devcard@3.2.0
+        uses: dailydotdev/action-devcard@3.2.1
         with:
           user_id: ${{ secrets.USER_ID }}
           commit_message: "Update ${filename}"
